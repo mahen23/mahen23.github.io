@@ -3,21 +3,19 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahen – Full-Stack & Mobile Developer Portfolio 2026</title>
-  <meta name="description" content="Full-stack developer specializing in ERP/CRM solutions, Angular, Flutter, Ionic, Symfony, Electron and cross-platform mobile apps." />
+  <title>Mahen Nowzadick – Full-Stack & Mobile Developer</title>
+  <meta name="description" content="Full-stack developer | ERP/CRM | Angular | Flutter | Ionic | Symfony | Electron | Mobile apps on Play Store & App Store" />
   <style>
     :root {
       --bg: #0f172a;
       --card: #1e293b;
       --text: #e5e7eb;
       --accent: #38bdf8;
-      --accent-dark: #0284c7;
       --muted: #94a3b8;
     }
-
-    * { box-sizing: border-box; margin: 0; padding: 0; }
+    * { margin:0; padding:0; box-sizing:border-box; }
     body {
-      font-family: system-ui, -apple-system, sans-serif;
+      font-family: system-ui, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.6;
@@ -25,153 +23,88 @@
       max-width: 1100px;
       margin: 0 auto;
     }
-
-    header {
-      text-align: center;
-      padding: 4rem 0 3rem;
-    }
-
-    h1 {
-      font-size: 3.2rem;
-      margin-bottom: 0.5rem;
-      color: white;
-    }
-
-    .tagline {
-      font-size: 1.35rem;
-      color: var(--muted);
-      margin-bottom: 1.5rem;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.8rem;
-      justify-content: center;
-      max-width: 720px;
-      margin: 0 auto 2.5rem;
-    }
-
+    header { text-align:center; padding: 4rem 0 2.5rem; }
+    h1 { font-size: 3.4rem; color:white; margin-bottom:0.4rem; }
+    .contact { font-size:1.1rem; color:var(--muted); margin:0.8rem 0; }
+    .tagline { font-size:1.4rem; color:var(--muted); margin:1rem 0 1.8rem; }
+    .skills { display:flex; flex-wrap:wrap; gap:0.7rem; justify-content:center; max-width:760px; margin:0 auto 2.5rem; }
     .skill-tag {
-      background: #334155;
-      color: var(--accent);
-      padding: 0.45rem 1rem;
-      border-radius: 999px;
-      font-size: 0.95rem;
-      border: 1px solid #475569;
+      background:#334155;
+      color:var(--accent);
+      padding:0.4rem 1rem;
+      border-radius:999px;
+      font-size:0.95rem;
+      border:1px solid #475569;
     }
-
-    section {
-      margin: 4rem 0;
-    }
-
+    section { margin:4rem 0; }
     h2 {
-      font-size: 2.1rem;
-      color: white;
-      margin-bottom: 1.8rem;
-      position: relative;
-      padding-bottom: 0.6rem;
+      font-size:2.2rem;
+      color:white;
+      margin-bottom:1.6rem;
+      position:relative;
     }
-
     h2::after {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 60px;
-      height: 4px;
-      background: var(--accent);
-      border-radius: 2px;
+      content:'';
+      position:absolute;
+      bottom:-6px; left:0;
+      width:70px; height:4px;
+      background:var(--accent);
+      border-radius:2px;
     }
-
-    .about p {
-      font-size: 1.15rem;
-      max-width: 780px;
-      margin: 0 auto 1.5rem;
-      color: #cbd5e1;
-    }
-
+    .about p { font-size:1.1rem; max-width:780px; margin:0 auto 1.4rem; color:#cbd5e1; }
+    .experience-item { margin-bottom:2.2rem; }
+    .exp-title { font-size:1.35rem; color:white; margin-bottom:0.4rem; }
+    .exp-company { color:var(--accent); font-weight:500; }
+    .exp-period { color:var(--muted); font-size:0.98rem; }
     .project-grid {
-      display: grid;
+      display:grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1.5rem;
+      gap:1.6rem;
     }
-
     .project {
-      background: var(--card);
-      border-radius: 12px;
-      overflow: hidden;
-      transition: transform 0.18s ease, box-shadow 0.18s ease;
-      border: 1px solid #334155;
+      background:var(--card);
+      border-radius:12px;
+      border:1px solid #334155;
+      overflow:hidden;
+      transition: all 0.18s ease;
     }
-
-    .project:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.4);
-    }
-
-    .project-content {
-      padding: 1.6rem;
-    }
-
-    .project h3 {
-      font-size: 1.35rem;
-      margin-bottom: 0.8rem;
-      color: white;
-    }
-
-    .project p {
-      color: #cbd5e1;
-      margin-bottom: 1.2rem;
-      font-size: 0.98rem;
-    }
-
-    .project-links a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-      margin-right: 1.2rem;
-      transition: color 0.2s;
-    }
-
-    .project-links a:hover {
-      color: #7dd3fc;
-      text-decoration: underline;
-    }
-
-    .tech-stack {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1rem;
-    }
-
+    .project:hover { transform:translateY(-6px); box-shadow:0 20px 30px -10px rgba(0,0,0,0.45); }
+    .project-content { padding:1.6rem; }
+    .project h3 { font-size:1.32rem; color:white; margin-bottom:0.7rem; }
+    .project p { color:#cbd5e1; font-size:0.97rem; margin-bottom:1.1rem; }
+    .tech-stack { display:flex; flex-wrap:wrap; gap:0.5rem; margin:1rem 0 1.1rem; }
     .tech {
-      background: #1e293b;
-      color: #94a3b8;
-      padding: 0.35rem 0.8rem;
-      border-radius: 6px;
-      font-size: 0.82rem;
+      background:#1e293b;
+      color:#94a3b8;
+      padding:0.32rem 0.8rem;
+      border-radius:6px;
+      font-size:0.84rem;
     }
-
+    .project-links a {
+      color:var(--accent);
+      text-decoration:none;
+      font-weight:500;
+      margin-right:1.1rem;
+    }
+    .project-links a:hover { color:#7dd3fc; text-decoration:underline; }
     footer {
-      text-align: center;
-      padding: 3rem 0 2rem;
-      color: #64748b;
-      font-size: 0.95rem;
+      text-align:center;
+      padding:3rem 0 2rem;
+      color:#64748b;
+      font-size:0.95rem;
     }
-
-    @media (max-width: 640px) {
-      h1 { font-size: 2.6rem; }
-      .project-grid { grid-template-columns: 1fr; }
+    @media (max-width:640px) {
+      h1 { font-size:2.7rem; }
+      .project-grid { grid-template-columns:1fr; }
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Mahen</h1>
-    <div class="tagline">Full-Stack Developer · ERP/CRM Specialist · Mobile & Desktop Apps</div>
+    <h1>Mahen Nowzadick</h1>
+    <div class="contact">Pailles, Port Louis, Mauritius • +230 59 08 30 98 • staticglow@live.com</div>
+    <div class="tagline">Full-Stack Developer · ERP/CRM Specialist · Mobile & Desktop Applications</div>
 
     <div class="skills">
       <span class="skill-tag">Angular</span>
@@ -180,18 +113,55 @@
       <span class="skill-tag">Symfony</span>
       <span class="skill-tag">Electron</span>
       <span class="skill-tag">Firebase</span>
-      <span class="skill-tag">Android</span>
-      <span class="skill-tag">Linux</span>
-      <span class="skill-tag">HTML5 / CSS3</span>
+      <span class="skill-tag">CI/CD</span>
+      <span class="skill-tag">REST APIs</span>
+      <span class="skill-tag">Google Play & App Store</span>
     </div>
   </header>
 
   <section class="about">
-    <h2>About Me</h2>
-    <p>Over the past five years, I have specialized in designing, developing, and implementing comprehensive ERP and CRM solutions, significantly enhancing business operations and customer relationship management for my current company.</p>
-    <p>Alongside my extensive expertise in ERP/CRM systems, I am a versatile developer with a strong background in mobile app development using Flutter, Ionic, and Capacitor, complemented by robust front-end skills in HTML5, CSS, and Angular.</p>
-    <p>My proficiency in back-end development is reinforced by experience with Symfony and hands-on use of the Firebase Console and Firebase Messaging API. I am also skilled in creating cross-platform desktop applications using Electron, with a proven track record of deploying high-performance mobile apps on both Google Play Store and Apple App Store.</p>
-    <p>My passion lies in crafting intuitive, responsive applications that exceed user expectations across diverse platforms, delivering seamless user experiences.</p>
+    <h2>Profile</h2>
+    <p>Over the past five years, I have specialized in designing, developing, and implementing comprehensive ERP and CRM solutions, significantly enhancing business operations and customer relationship management.</p>
+    <p>I am a versatile full-stack & mobile developer experienced with Flutter, Ionic/Capacitor, Angular, Symfony, Electron and Firebase. I have published multiple high-rated mobile apps and built cross-platform desktop tools while maintaining strong focus on performance, scalability, and clean user experience.</p>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+
+    <div class="experience-item">
+      <div class="exp-title">Web Application Developer (Full-Stack)</div>
+      <div><span class="exp-company">Uniconsults Ltd</span> — Curepipe</div>
+      <div class="exp-period">June 2025 – Present</div>
+      <ul style="margin:0.9rem 0 0 1.6rem; color:#cbd5e1;">
+        <li>Contributed to Sicorax® HRMS – modernized legacy AngularJS app and old Node.js backend</li>
+        <li>Developed & optimized payroll, HR, and reporting features</li>
+        <li>Managed CI/CD pipelines for reliable, scalable web deployments</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-title">Web & Mobile Application Developer</div>
+      <div><span class="exp-company">Novotecs Ltd</span> — Ebene</div>
+      <div class="exp-period">January 2019 – Present</div>
+      <ul style="margin:0.9rem 0 0 1.6rem; color:#cbd5e1;">
+        <li>Published 8 mobile apps on Google Play Store (avg. 4.5+ stars, +20% user retention)</li>
+        <li>Developed & deployed 10+ cross-platform apps using Ionic/Cordova, Ionic/Capacitor, Flutter</li>
+        <li>Built cross-platform desktop apps with Electron (Windows, macOS, Linux)</li>
+        <li>Created scalable backends with Symfony 6 and modern Angular (v10–16)</li>
+        <li>Designed and integrated RESTful APIs and multi-source data synchronization</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <div class="exp-title">Web Developer</div>
+      <div><span class="exp-company">Electrocaine</span> — Phoenix</div>
+      <div class="exp-period">April 2012 – December 2018</div>
+      <ul style="margin:0.9rem 0 0 1.6rem; color:#cbd5e1;">
+        <li>Maintained and extended client websites (mainly Singapore market) using PHP & MySQL</li>
+        <li>Developed multiple custom WordPress websites with advanced customizations</li>
+      </ul>
+    </div>
+
   </section>
 
   <section>
@@ -200,65 +170,51 @@
 
       <div class="project">
         <div class="project-content">
-          <h3>Enterprise Resource Planning (ERP) System</h3>
-          <p>Full-cycle development of a modular ERP platform used by 200+ internal users. Includes inventory, procurement, production planning, finance, and HR modules.</p>
+          <h3>Sicorax® HRMS Modernization</h3>
+          <p>Ongoing migration and feature enhancement of legacy AngularJS HR & payroll system to modern Angular stack with improved performance and scalability.</p>
           <div class="tech-stack">
             <span class="tech">Angular</span>
-            <span class="tech">Symfony</span>
-            <span class="tech">PostgreSQL</span>
-            <span class="tech">Docker</span>
-          </div>
-          <div class="project-links" style="margin-top:1.3rem;">
-            <a href="#" target="_blank">Documentation</a>
-            <!-- <a href="#" target="_blank">Live System (internal)</a> -->
+            <span class="tech">Node.js</span>
+            <span class="tech">CI/CD</span>
           </div>
         </div>
       </div>
 
       <div class="project">
         <div class="project-content">
-          <h3>Customer Relationship Management (CRM)</h3>
-          <p>Modern CRM solution with lead management, sales pipeline, customer portal, automated workflows, and real-time notifications via Firebase Messaging.</p>
-          <div class="tech-stack">
-            <span class="tech">Angular</span>
-            <span class="tech">Symfony</span>
-            <span class="tech">Firebase</span>
-            <span class="tech">TypeScript</span>
-          </div>
-          <div class="project-links" style="margin-top:1.3rem;">
-            <a href="#" target="_blank">Case Study</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-content">
-          <h3>Field Service Mobile App</h3>
-          <p>Cross-platform mobile application for technicians (iOS & Android) with offline support, GPS tracking, job scheduling, signature capture, and photo reports.</p>
+          <h3>Field Service & Operations Mobile Apps</h3>
+          <p>Cross-platform apps (iOS & Android) used by field teams – offline mode, GPS, job management, photo & signature capture. Published on Play Store & App Store.</p>
           <div class="tech-stack">
             <span class="tech">Flutter</span>
+            <span class="tech">Ionic + Capacitor</span>
             <span class="tech">Firebase</span>
-            <span class="tech">Google Play</span>
-            <span class="tech">App Store</span>
           </div>
-          <div class="project-links" style="margin-top:1.3rem;">
-            <a href="https://play.google.com/store/apps/details?id=com.example.fieldservice" target="_blank">Play Store</a> |
-            <a href="#" target="_blank">App Store</a>
+          <div class="project-links">
+            <a href="#" target="_blank">Play Store apps</a>
           </div>
         </div>
       </div>
 
       <div class="project">
         <div class="project-content">
-          <h3>Internal Desktop Dashboard</h3>
-          <p>Cross-platform desktop application for real-time KPI monitoring, report generation, and quick access to ERP/CRM data.</p>
+          <h3>ERP & CRM Web Solutions</h3>
+          <p>Custom internal ERP/CRM modules built with Angular front-end and Symfony backend – focused on business process automation and real-time reporting.</p>
+          <div class="tech-stack">
+            <span class="tech">Angular 14–16</span>
+            <span class="tech">Symfony 6</span>
+            <span class="tech">REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Cross-Platform Desktop Dashboard</h3>
+          <p>Internal KPI monitoring & reporting tool packaged with Electron for Windows, macOS and Linux environments.</p>
           <div class="tech-stack">
             <span class="tech">Electron</span>
             <span class="tech">Angular</span>
             <span class="tech">Node.js</span>
-          </div>
-          <div class="project-links" style="margin-top:1.3rem;">
-            <a href="https://github.com/mahen23/internal-dashboard" target="_blank">Source Code</a>
           </div>
         </div>
       </div>
@@ -267,7 +223,7 @@
   </section>
 
   <footer>
-    <p>© 2026 Mahen — Built with passion for clean code & great UX</p>
+    <p>© 2026 Mahen Nowzadick • Built with focus on performance & user experience</p>
   </footer>
 
 </body>
