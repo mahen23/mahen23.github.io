@@ -2,38 +2,273 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Mahen – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahen – Full-Stack & Mobile Developer Portfolio 2026</title>
+  <meta name="description" content="Full-stack developer specializing in ERP/CRM solutions, Angular, Flutter, Ionic, Symfony, Electron and cross-platform mobile apps." />
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      background: #0f172a;
-      color: #e5e7eb;
-      margin: 0;
-      padding: 2rem;
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --text: #e5e7eb;
+      --accent: #38bdf8;
+      --accent-dark: #0284c7;
+      --muted: #94a3b8;
     }
-    a { color: #38bdf8; text-decoration: none; }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header {
+      text-align: center;
+      padding: 4rem 0 3rem;
+    }
+
+    h1 {
+      font-size: 3.2rem;
+      margin-bottom: 0.5rem;
+      color: white;
+    }
+
+    .tagline {
+      font-size: 1.35rem;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      justify-content: center;
+      max-width: 720px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .skill-tag {
+      background: #334155;
+      color: var(--accent);
+      padding: 0.45rem 1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      border: 1px solid #475569;
+    }
+
+    section {
+      margin: 4rem 0;
+    }
+
+    h2 {
+      font-size: 2.1rem;
+      color: white;
+      margin-bottom: 1.8rem;
+      position: relative;
+      padding-bottom: 0.6rem;
+    }
+
+    h2::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 4px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .about p {
+      font-size: 1.15rem;
+      max-width: 780px;
+      margin: 0 auto 1.5rem;
+      color: #cbd5e1;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 1.5rem;
+    }
+
     .project {
-      background: #020617;
-      padding: 1rem;
-      margin-bottom: 1rem;
-      border-radius: 8px;
+      background: var(--card);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      border: 1px solid #334155;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 30px -12px rgba(0,0,0,0.4);
+    }
+
+    .project-content {
+      padding: 1.6rem;
+    }
+
+    .project h3 {
+      font-size: 1.35rem;
+      margin-bottom: 0.8rem;
+      color: white;
+    }
+
+    .project p {
+      color: #cbd5e1;
+      margin-bottom: 1.2rem;
+      font-size: 0.98rem;
+    }
+
+    .project-links a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 500;
+      margin-right: 1.2rem;
+      transition: color 0.2s;
+    }
+
+    .project-links a:hover {
+      color: #7dd3fc;
+      text-decoration: underline;
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .tech {
+      background: #1e293b;
+      color: #94a3b8;
+      padding: 0.35rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.82rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 3rem 0 2rem;
+      color: #64748b;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 640px) {
+      h1 { font-size: 2.6rem; }
+      .project-grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
 <body>
 
-  <h1>Mahen</h1>
-  <p>Full-stack developer · Angular · Android · Linux</p>
+  <header>
+    <h1>Mahen</h1>
+    <div class="tagline">Full-Stack Developer · ERP/CRM Specialist · Mobile & Desktop Apps</div>
 
-  <h2>Projects</h2>
+    <div class="skills">
+      <span class="skill-tag">Angular</span>
+      <span class="skill-tag">Flutter</span>
+      <span class="skill-tag">Ionic + Capacitor</span>
+      <span class="skill-tag">Symfony</span>
+      <span class="skill-tag">Electron</span>
+      <span class="skill-tag">Firebase</span>
+      <span class="skill-tag">Android</span>
+      <span class="skill-tag">Linux</span>
+      <span class="skill-tag">HTML5 / CSS3</span>
+    </div>
+  </header>
 
-  <div class="project">
-    <h3>Project Name</h3>
-    <p>Short description of what you built.</p>
-    <a href="https://example.com" target="_blank">Live site</a> |
-    <a href="https://github.com/mahen23/repo-name" target="_blank">Source</a>
-  </div>
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Over the past five years, I have specialized in designing, developing, and implementing comprehensive ERP and CRM solutions, significantly enhancing business operations and customer relationship management for my current company.</p>
+    <p>Alongside my extensive expertise in ERP/CRM systems, I am a versatile developer with a strong background in mobile app development using Flutter, Ionic, and Capacitor, complemented by robust front-end skills in HTML5, CSS, and Angular.</p>
+    <p>My proficiency in back-end development is reinforced by experience with Symfony and hands-on use of the Firebase Console and Firebase Messaging API. I am also skilled in creating cross-platform desktop applications using Electron, with a proven track record of deploying high-performance mobile apps on both Google Play Store and Apple App Store.</p>
+    <p>My passion lies in crafting intuitive, responsive applications that exceed user expectations across diverse platforms, delivering seamless user experiences.</p>
+  </section>
+
+  <section>
+    <h2>Selected Projects</h2>
+    <div class="project-grid">
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Enterprise Resource Planning (ERP) System</h3>
+          <p>Full-cycle development of a modular ERP platform used by 200+ internal users. Includes inventory, procurement, production planning, finance, and HR modules.</p>
+          <div class="tech-stack">
+            <span class="tech">Angular</span>
+            <span class="tech">Symfony</span>
+            <span class="tech">PostgreSQL</span>
+            <span class="tech">Docker</span>
+          </div>
+          <div class="project-links" style="margin-top:1.3rem;">
+            <a href="#" target="_blank">Documentation</a>
+            <!-- <a href="#" target="_blank">Live System (internal)</a> -->
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Customer Relationship Management (CRM)</h3>
+          <p>Modern CRM solution with lead management, sales pipeline, customer portal, automated workflows, and real-time notifications via Firebase Messaging.</p>
+          <div class="tech-stack">
+            <span class="tech">Angular</span>
+            <span class="tech">Symfony</span>
+            <span class="tech">Firebase</span>
+            <span class="tech">TypeScript</span>
+          </div>
+          <div class="project-links" style="margin-top:1.3rem;">
+            <a href="#" target="_blank">Case Study</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Field Service Mobile App</h3>
+          <p>Cross-platform mobile application for technicians (iOS & Android) with offline support, GPS tracking, job scheduling, signature capture, and photo reports.</p>
+          <div class="tech-stack">
+            <span class="tech">Flutter</span>
+            <span class="tech">Firebase</span>
+            <span class="tech">Google Play</span>
+            <span class="tech">App Store</span>
+          </div>
+          <div class="project-links" style="margin-top:1.3rem;">
+            <a href="https://play.google.com/store/apps/details?id=com.example.fieldservice" target="_blank">Play Store</a> |
+            <a href="#" target="_blank">App Store</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class="project-content">
+          <h3>Internal Desktop Dashboard</h3>
+          <p>Cross-platform desktop application for real-time KPI monitoring, report generation, and quick access to ERP/CRM data.</p>
+          <div class="tech-stack">
+            <span class="tech">Electron</span>
+            <span class="tech">Angular</span>
+            <span class="tech">Node.js</span>
+          </div>
+          <div class="project-links" style="margin-top:1.3rem;">
+            <a href="https://github.com/mahen23/internal-dashboard" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Mahen — Built with passion for clean code & great UX</p>
+  </footer>
 
 </body>
 </html>
